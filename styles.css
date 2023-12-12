@@ -31,29 +31,32 @@ body {
 
 
 nav {
+    display: flex;
     width: 100%;
     padding: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     background: #E7F8F9;
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
 }
-
+nav .logo {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
 nav ul {
     display: flex;
-    width: 100%;
-    gap: 50px;
-    justify-content:center;
-    
-    
-
+    justify-content: space-around;
+    gap: 50px; 
 }
+
+
 
 nav ul li {
     width: 100px;
     padding: 5px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     list-style:none;
     text-align: center;
@@ -62,8 +65,18 @@ nav ul li {
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
     
     
-}
+} 
 
+nav button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid orangered;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 15px;
+}
 
 /* Hero Section Styling */
 
@@ -86,7 +99,7 @@ nav ul li {
     border-radius: 10px;
     background: #ff0000;
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
-}
+} 
 
 /* .hero-section .img img {
     width: 100%;
@@ -113,15 +126,7 @@ nav ul li {
     color: rgb(1, 8, 45);
 }
 
-.hero-section p {
-    font-weight: 400;
-    font-size: 1.2rem;
-    max-width: 70%;
-    color: rgb(0, 0, 0);
-    line-height: 1.6rem;margin-top: 20px;
-}
-
-.btn {
+.hero-section .name .btn {
     width: 300px;
     padding: 10px 15px;
     border-radius: 7px;
@@ -131,12 +136,24 @@ nav ul li {
     background-color:gainsboro;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 2s;
+    transition: 1s;
 }
 
-.btn:hover {
+.hero-section .name .btn:hover {
     background-color: orangered;
     color: white;
-    transition: transform scaleY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 10px 0px rgb(37, 37, 37) , -3px -3px 10px 0px rgb(109, 111, 111);
+    /* transition: transform 150ms; */
+}
+
+
+
+.hero-section p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 70%;
+    color: rgb(0, 0, 0);
+    line-height: 1.6rem;margin-top: 20px;
 }
 
