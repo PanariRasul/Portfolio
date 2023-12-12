@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: #ffffffd7;;
+    background-color: #E7F8F9;;
     /* font-family: 'Bodoni Moda', serif; */
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Roboto', sans-serif;
@@ -37,6 +37,7 @@ nav {
     align-items: center;
     justify-content:space-between;
     background: #E7F8F9;
+    box-shadow: 2px 2px 4px black;
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
 }
 nav .logo {
@@ -87,43 +88,47 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 20px;
-    border: 2px solid black;
+    border-radius: 30px;
+    
 }
 
 .hero-section .img {
-    height:100px;
-    width: 300px;
+    height: 430px;
+    width: 30%;
     padding: 1px;
     margin: 50px;
     border-radius: 10px;
-    background: #ff0000;
+    box-shadow: 3px 3px 10px 8px rgba(0, 255, 255, 0.56) , -3px -3px 10px 8px hsl(182, 100%, 50%) ;
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
 } 
 
-/* .hero-section .img img {
+.hero-section .img img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 
-} */
+} 
 
 .hero-section .name {
     border-radius: 5px;
-    max-width: 50%;
-    background: #ffffff;
-    padding: 10px 15px 10px 15px;
+    max-width: 70%;
+    padding: 50px;
+    border: 1.2px solid rgb(0, 179, 255);
+    /* padding: 10px 15px 10px 15px; */
+    border-radius: 30px;
+    background: #E7F8F9;
+    box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56) inset, -10px -10px 20px 0px #FFF inset;
     /* box-shadow: 10px 10px 20px 0px rgba(118, 147, 149, 0.56), -10px -10px 20px 0px #FFF; */
 }
 
 .hero-section .name h1 {
     color: rgb(2, 1, 20);
     line-height: 80px;
-    font-size: 60px;
+    font-size: 100px;
 }
 
 .hero-section .name h1 span {
-    color: rgb(1, 8, 45);
+    color: rgb(0, 195, 255);
 }
 
 .hero-section .name .btn {
@@ -156,4 +161,5 @@ nav button {
     color: rgb(0, 0, 0);
     line-height: 1.6rem;margin-top: 20px;
 }
+
 
